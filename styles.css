@@ -30,3 +30,7 @@
 .buttons input:hover{
     background-color: beige;
 }
+
+#sign{
+    background-color: rgb(161, 170, 178);
+}
