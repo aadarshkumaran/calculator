@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" name="form">
+            <div class="text-box">
+                <input type="text" name="input" placeholder="0">
+            </div>
+            <div class="button-container">
+                <div class="buttons">
+                    <input type="button" value="7" onclick="form.input.value+=7">
+                    <input type="button" value="8" onclick="form.input.value+=8">
+                    <input type="button" value="9" onclick="form.input.value+=9">
+                    <input id="sign" type="button" value="x" onclick=multiply()>
+                </div>
+                <div class="buttons">
+                    <input type="button" value="4" onclick="form.input.value+=4">
+                    <input type="button" value="5" onclick="form.input.value+=5">
+                    <input type="button" value="6" onclick="form.input.value+=6">
+                    <input id="sign" type="button" value="-" onclick=subtract()>
+                </div>
+                <div class="buttons">
+                    <input type="button" value="1" onclick="form.input.value+=1">
+                    <input type="button" value="2" onclick="form.input.value+=2">
+                    <input type="button" value="3" onclick="form.input.value+=3">
+                    <input id="sign" type="button" value="+" onclick=add()>
+                </div>
+                <div class="buttons">
+                    <input type="button" value="C" onclick="form.input.value=''">
+                    <input type="button" value="0" onclick="form.input.value+=0">
+                    <input id="sign" type="button" value="=" onclick="form.input.value=eval(Math.parseInt(form.input.value))">
+                    <input id="sign" type="button" value="/" onclick=divide()>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
